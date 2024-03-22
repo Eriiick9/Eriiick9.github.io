@@ -1,3 +1,16 @@
 body {
-    background-color: S;
+    background-color: #050319;
+    margin: 0px;
+}
+img {
+    background-image: url(C:\Users\erick\Documents\GitHub\Pagina-web\pagina.png);
+    background-size: cover; /* Ajusta la imagen para que cubra el contenedor */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-position: center; /* Centra la imagen */
+    width: 1200px;
+    height: 400px; /* Establece el alto específico */
+}
+.bloque {
+    color: white;
+    text-align: center;
 }
