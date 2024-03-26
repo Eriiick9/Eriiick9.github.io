@@ -4,16 +4,21 @@ body {
     cursor: pointer;
 }
 
-img {
-    background-image: url(https://github.com/Eriiick9/Pagina-web/tree/master/contenido); /* Ruta a tu imagen */
-    background-repeat: repeat-x; /* Repetir la imagen en ambas direcciones */
-   
+.contenedor {
+    background-image: url('../img/pagina.png'); /* Ruta a tu imagen */
+    background-repeat: round; /* Repetir la imagen en ambas direcciones */
+    width: 100% ;
+    height: 25rem ;
 }
-
 .bloque {
     color: white;
     text-align: center;
     
+}
+.titulo{
+    color: white;
+    text-align: center;
+    margin-top: ;
 }
 .l1{
 
