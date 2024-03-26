@@ -10,7 +10,7 @@ body {
     width: 100%;
     height: 400px;
     position: absolute;
-    z-index: 1; /* Asegura que esta imagen esté en la parte superior */
+    z-index: 1;
 }
 
 .imagen-pequena {
@@ -28,7 +28,7 @@ body {
     }
     .imagen-pequena {
         display: block; /* Muestra la imagen pequeña en pantallas pequeñas */
-        position: absolute;
+         position: absolute;
     }
 }
 .presentacion {
@@ -45,6 +45,7 @@ body {
     text-align: center;
     position: relative;
     font-family: Impact;
+    z-index: 2;
 }
 .l1{
     display: block;
