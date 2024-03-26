@@ -17,7 +17,7 @@ body {
     position: absolute;
 }
 
-@media screen and (max-width: 60%) {
+@media (max-width: 100px) {
     .imagen-grande {
         display: none;
     }
@@ -61,39 +61,58 @@ body {
 }   
 .l3 {
     display: flex;
-    margin-left: 20%;
-    margin-right: 20%;
-    padding-top: 30px;
-    font-family:Arial, Helvetica, sans-serif;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px; 
+    font-family: Arial, Helvetica, sans-serif;
+    gap: 7px;
 }
+
 .l31 {
     text-shadow: 0 0 0px #22266e, 0 0 10px #22266e, 0 0 0px #22266e, 0 0 10px #22266e, 0 0 0px #22266e, 0 0 0px #22266e, 0 0 0px #22266e, 0 0 5px #22266e;
     color:#a7ace9;
-    font-size: 20px;
+    font-size: 25px;
     align-items: right;
+    width: 180px;
+    text-align: right;
 }
 #slash {
    color: #714fd5;
+   font-size: 70px;
 }
 .l32 {
     text-shadow: 0 0 0px #22266e, 0 0 10px #22266e, 0 0 0px #22266e, 0 0 10px #22266e, 0 0 0px #22266e, 0 0 0px #22266e, 0 0 0px #22266e, 0 0 5px #22266e;
     color: #a7ace9;
     justify-items: left;
-    font-size: 20px;
-}
-   
+    font-size: 25px;
+    width: 180px;
+    text-align: left;
+} 
+
 .l4 {
     text-shadow: 0 0 0px #73759d, 0 0 5px #73759d, 0 0 0px #73759d, 0 0 10px #73759d, 0 0 0px #73759d, 0 0 0px #73759d, 0 0 0px #73759d, 0 0 1px #73759d;
     color: #d7dbf1;
-    font-size: 20px;
+    font-size: 25px;
     letter-spacing: 3px;
     padding-top: 20px;
+    font-family:Arial, Helvetica, sans-serif;
+    text-decoration: none;
 }
 .l5 {
+    display: flex;
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center; /* Centrar verticalmente */
     padding-top: 10px;
-    font-size: ;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 5px;
+    text-align: left; /* Justificar a la izquierda */
 }
 
+.correo {
+    text-decoration: none;
+    color: white;
+}
 .btn {
-    margin-top: 10px;
+   padding-top:40px ;
 }
