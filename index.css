@@ -5,10 +5,10 @@ body {
 img {
     background-image: url(C:\Users\erick\Documents\GitHub\Pagina-web\pagina.png);
     background-size: cover; /* Ajusta la imagen para que cubra el contenedor */
-    background-repeat: repeat; /* Evita que la imagen se repita */
+    background-repeat: repeat-x; /* Evita que la imagen se repita */
     background-position: center; /* Centra la imagen */
-    width: 1100px;
-    height: 400px; /* Establece el alto específico */
+    width: 500px;
+    height: 300px; /* Establece el alto específico */
 }
 .bloque {
     color: white;
