@@ -1,7 +1,8 @@
 body {
     background-color: #050319;
     margin: 0px;
-    cursor: pointer;
+    cursor: url( '../img/icons8-cursor.svg'), auto;
+    
 }
 
 img {
@@ -9,15 +10,24 @@ img {
     background-repeat: repeat; /* Repetir la imagen en ambas direcciones */
     width: 1000px; /* Ancho deseado */
     height: 400px; /* Alto deseado */
+    position: absolute;
 }
-
+.presentacion {
+    color: white;
+    position: relative;
+    text-align: center;
+    padding-top: 50px;
+}
 .bloque {
+    margin-top: 230px;
     color: white;
     text-align: center;
-    
+    position: relative;
+    font-family:Arial, Helvetica, sans-serif ;
 }
 .l1{
-
+    font-size: 80px;
+    margin: 5px;
 }
 .l2{
 
