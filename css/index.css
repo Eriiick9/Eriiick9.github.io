@@ -5,10 +5,9 @@ body {
 }
 
 img {
-    background-image: url('pagina.png'); /* Ruta a tu imagen */
-    background-repeat: repeat; /* Repetir la imagen en ambas direcciones */
-    width: 1000px; /* Ancho deseado */
-    height: 400px; /* Alto deseado */
+    background-image: url(https://github.com/Eriiick9/Pagina-web/tree/master/contenido); /* Ruta a tu imagen */
+    background-repeat: repeat-x; /* Repetir la imagen en ambas direcciones */
+   
 }
 
 .bloque {
