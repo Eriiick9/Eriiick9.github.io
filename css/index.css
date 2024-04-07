@@ -5,8 +5,8 @@ body {
 }
 .fondo {
     position: absolute;
-    margin-top: 365px;
-    height: 100%;
+    margin-top: 346px;
+    height: 65%;
     width: 100%;
     background: linear-gradient(to bottom, #000000, #050319 15%,#16123a);
 }
@@ -19,16 +19,23 @@ body {
   margin-top: 5px;
 }
 .menu1 {
-    
     position: relative;
     color: white;
     z-index: 4;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+    display: flex;
+    padding-top: 20px;
+    
 }
 .lista1 {
+    display: flex;
     list-style: none;
     margin-top: 0px;
     padding-top: 0px;
+    gap: 10px;
 }
+
 .imagen-grande {
     background-image: url('pagina.png');
     background-repeat: repeat;
@@ -65,6 +72,14 @@ body {
         display: block; /* Muestra la imagen pequeña en pantallas pequeñas */
          position: absolute;
     }
+    .fondo {
+        position: absolute;
+        margin-top: 326px;
+        height: 65%;
+        width: 100%;
+        background: linear-gradient(to bottom, #000000, #050319 15%,#16123a);
+    
+}
 }
 @media (min-width: 950px) {
     .imagen-grande {
@@ -87,7 +102,7 @@ body {
     }
     .imagen-grande {
         display: block; /* Muestra la imagen pequeña en pantallas pequeñas */
-         position: absolute;
+        position: absolute;
     }
 }
 .presentacion {
@@ -181,3 +196,9 @@ body {
    padding-top:40px ;
 }
 
+footer {
+    background-color: rgba(0, 0, 0, 0.8);
+    text-align: center;
+    width: 100%;
+    margin-top: 100px;
+}
