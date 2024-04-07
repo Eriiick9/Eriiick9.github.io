@@ -3,6 +3,9 @@ body {
     margin: 0px;
     cursor: url( '../img/hola.svg'), auto; 
 }
+html body {
+    height: 200px;
+}
 .fondo {
     position: absolute;
     margin-top: 346px;
@@ -75,11 +78,10 @@ body {
     .fondo {
         position: absolute;
         margin-top: 324px;
-        height: 80%;
+        height: 100%;
         width: 100%;
         background: linear-gradient(to bottom, #000000, #050319 15%,#16123a);
-    
-}
+    }  
 }
 @media (min-width: 950px) {
     .imagen-grande {
@@ -201,5 +203,5 @@ footer {
     background-color: rgba(0, 0, 0, 0.8);
     text-align: center;
     width: 100%;
-    margin-top: 70px;
+    margin-top: 100px;
 }
