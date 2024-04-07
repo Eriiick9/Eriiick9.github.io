@@ -10,6 +10,14 @@ body {
     width: 100%;
     height: 400px;
     position: absolute;
+    z-index: 2;
+}
+.imagen-mediana {
+    background-image: url('pagina2.png');
+    background-repeat: repeat;
+    width: 100%;
+    height: 400px;
+    position: absolute;
     z-index: 1;
 }
 
@@ -26,11 +34,40 @@ body {
     .imagen-grande {
         display: none; /* Oculta la imagen grande en pantallas pequeñas */
     }
+    .imagen-mediana {
+        display: none; /* Oculta la imagen grande en pantallas pequeñas */
+    }
     .imagen-pequena {
         display: block; /* Muestra la imagen pequeña en pantallas pequeñas */
          position: absolute;
     }
 }
+@media (min-width: 950px) {
+    .imagen-grande {
+        display: none; /* Oculta la imagen grande en pantallas pequeñas */
+    }
+    .imagen-pequeña {
+        display: none; /* Oculta la imagen grande en pantallas pequeñas */
+    }
+    .imagen-mediana {
+        display: block; /* Muestra la imagen pequeña en pantallas pequeñas */
+         position: absolute;
+    }
+}
+@media (min-width: 1500px) {
+    .imagen-mediana {
+        display: none; /* Oculta la imagen grande en pantallas pequeñas */
+    }
+    .imagen-pequeña {
+        display: none; /* Oculta la imagen grande en pantallas pequeñas */
+    }
+    .imagen-grande {
+        display: block; /* Muestra la imagen pequeña en pantallas pequeñas */
+         position: absolute;
+    }
+}
+
+
 .presentacion {
     position: relative;
     color: white;
@@ -87,7 +124,7 @@ body {
     text-shadow: 0 0 0px #22266e, 0 0 10px #22266e, 0 0 0px #22266e, 0 0 10px #22266e, 0 0 0px #22266e, 0 0 0px #22266e, 0 0 0px #22266e, 0 0 5px #22266e;
     color: #a7ace9;
     justify-items: left;
-    font-size: 25px;
+    font-size: 23px;
     width: 180px;
     text-align: left;
 } 
