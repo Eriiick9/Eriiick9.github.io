@@ -1,9 +1,34 @@
 body {
-    background-color: #050319;
+    /* background-color: #050319; */
     margin: 0px;
-    cursor: url( '../img/erick.svg'), auto; 
+    cursor: url( '../img/hola.svg'), auto; 
 }
-
+.fondo {
+    position: absolute;
+    margin-top: 365px;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(to bottom, #000000, #050319 15%,#16123a);
+}
+.menu2 {
+  position: absolute;
+  z-index: 4;
+  text-align: right;
+  right: 0;
+  margin-right: 5px ;
+  margin-top: 5px;
+}
+.menu1 {
+    
+    position: relative;
+    color: white;
+    z-index: 4;
+}
+.lista1 {
+    list-style: none;
+    margin-top: 0px;
+    padding-top: 0px;
+}
 .imagen-grande {
     background-image: url('pagina.png');
     background-repeat: repeat;
@@ -20,14 +45,13 @@ body {
     position: absolute;
     z-index: 1;
 }
-
 .imagen-pequena {
     background-image: url('pagina1.png');
     background-repeat: repeat;
     width: 100%;
     height: 400px;
     position: absolute;
-    z-index: 0; /* Asegura que esta imagen esté detrás de la imagen grande */
+    z-index: 0; /* posicion de las imagenes, cual queda por adelante */
 }
 
 @media (max-width: 950px) {
@@ -66,8 +90,6 @@ body {
          position: absolute;
     }
 }
-
-
 .presentacion {
     position: relative;
     color: white;
@@ -76,6 +98,7 @@ body {
     font-size: 23px;
     font-family: Arial, Helvetica, sans-serif;
     z-index: 2;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
 }
 .bloque {
     margin-top: 160px;
@@ -84,6 +107,7 @@ body {
     position: relative;
     font-family: Impact;
     z-index: 2;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 .l1{
     display: block;
@@ -156,3 +180,4 @@ body {
 .btn {
    padding-top:40px ;
 }
+
