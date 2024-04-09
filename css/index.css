@@ -2,34 +2,31 @@ body {
     /* background-color: #050319; */
     margin: 0px;
     cursor: url( '../img/hola.svg'), auto; 
+    max-height: 800px;
+    overflow-y:  auto ;
 }
-html body {
-    height: 200px;
-}
+
 .fondo {
     position: absolute;
-    margin-top: 346px;
-    height: 65%;
+    margin-top: 400px;
+    height: 100%;
     width: 100%;
     background: linear-gradient(to bottom, #000000, #050319 15%,#16123a);
 }
-.menu2 {
-  position: absolute;
-  z-index: 4;
-  text-align: right;
-  right: 0;
-  margin-right: 5px ;
-  margin-top: 5px;
-}
 .menu1 {
-    position: relative;
-    color: white;
+    position: absolute;
     z-index: 4;
-    background-color: rgba(0, 0, 0, 0.8);
     border-radius: 10px;
     display: flex;
-    padding-top: 20px;
-    
+    height: 40px;
+    top: 10px;
+    left: 40%;
+}
+.menu1 li {
+    text-align: center;
+    color: white;
+    transition: 1s;
+    font-family: Arial, Helvetica, sans-serif;
 }
 .lista1 {
     display: flex;
@@ -37,6 +34,11 @@ html body {
     margin-top: 0px;
     padding-top: 0px;
     gap: 10px;
+    text-align: center;
+}
+li:hover {
+    color: grey;
+    text-decoration: underline;
 }
 
 .imagen-grande {
@@ -61,7 +63,7 @@ html body {
     width: 100%;
     height: 400px;
     position: absolute;
-    z-index: 0; /* posicion de las imagenes, cual queda por adelante */
+    z-index: 1; /* posicion de las imagenes, cual queda por adelante */
 }
 
 @media (max-width: 950px) {
@@ -77,11 +79,25 @@ html body {
     }
     .fondo {
         position: absolute;
-        margin-top: 324px;
+        margin-top: 400px;
         height: 100%;
         width: 100%;
         background: linear-gradient(to bottom, #000000, #050319 15%,#16123a);
-    }  
+    } 
+    .menu2 {
+        position: absolute;
+        z-index: 4;
+        text-align: right;
+        right: 0;
+        margin-right: 5px ;
+        margin-top: 5px;
+      } 
+    .menu1 {
+        display: none; 
+    }
+    .lista1 {
+        display: none; 
+    }
 }
 @media (min-width: 950px) {
     .imagen-grande {
@@ -94,6 +110,9 @@ html body {
         display: block; /* Muestra la imagen pequeña en pantallas pequeñas */
          position: absolute;
     }
+    .menu2 {
+        display: none; 
+    }
 }
 @media (min-width: 1500px) {
     .imagen-mediana {
@@ -105,13 +124,17 @@ html body {
     .imagen-grande {
         display: block; /* Muestra la imagen pequeña en pantallas pequeñas */
         position: absolute;
+
+    }
+    .menu2 {
+        display: none;
     }
 }
 .presentacion {
     position: relative;
     color: white;
     text-align: center;
-    padding: 50px;
+    padding-top: 90px;
     font-size: 23px;
     font-family: Arial, Helvetica, sans-serif;
     z-index: 2;
@@ -203,5 +226,32 @@ footer {
     background-color: rgba(0, 0, 0, 0.8);
     text-align: center;
     width: 100%;
-    margin-top: 100px;
+    bottom: 0px;
+    margin-top: 20px;
 }
+footer a img {
+    transition: transform 0.5s; /* Agrega una transición para suavizar el cambio de tamaño */
+    align-items: center;
+    margin: 10px;
+   
+  }
+  
+  footer a img:hover {
+    animation: rebote 0.5s forwards; /* Aplica la animación 'rebote' cuando el ratón está sobre la imagen y mantiene el último estado */
+  }
+  
+  @keyframes rebote {
+    0% {
+      transform: scale(1); /* La imagen comienza con su tamaño original (escala de 1) */
+    }
+    25% {
+      transform: scale(1.1); /* A los 0.5 segundos de la animación, la imagen se aumenta a un 110% de su tamaño original */
+    }
+    100% {
+      transform: scale(1.50); /* Al final de la animación, la imagen se aumenta a un 150% de su tamaño original */
+    }
+  }
+
+  
+  
+  
