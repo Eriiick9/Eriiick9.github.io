@@ -1,28 +1,21 @@
+
 body {
     /* background-color: #050319; */
     margin: 0px;
     cursor: url( '../img/hola.svg'), auto; 
     max-height: 800px;
     overflow-y:  auto ;
+    min-height: 100vh;
+    position: relative;
 }
-body::-webkit-scrollbar{
+body::-webkit-scrollbar {
     width: 10px;
+    background: #050319;
 }
-body::-webkit-scrollbar-track{
-    background: linear-gradient(to bottom, #000000, #050319 15%,#16123a);
-} 
-body::-webkit-track{
-    border: 7px solid;
+body::-webkit-scrollbar-thumb {
+    background: #16123a;
     border-radius: 10px;
-    background-color:#050319;
-
-}
-.fondo {
-    position: absolute;
-    margin-top: 400px;
-    height: 100vh;
-    width: 100%;
-    background: linear-gradient(to bottom, #000000, #050319 15%,#16123a);
+    border-right: 2px solid #050319;
 }
 .menu1 {
     position: absolute;
@@ -91,9 +84,10 @@ li:hover {
     .fondo {
         position: absolute;
         margin-top: 400px;
-        height: 100%;
+        height: 63%;
         width: 100%;
         background: linear-gradient(to bottom, #000000, #050319 15%,#16123a);
+        margin-bottom: 0px;
     } 
     .menu2 {
         position: absolute;
@@ -109,7 +103,23 @@ li:hover {
     .lista1 {
         display: none; 
     }
+    .l1 {
+        font-size: 80px ;
+    }
+    .l2 {
+        font-size: 30px ;
+    }
+    .l31 {
+        font-size: 20px ;
+    }
+    #slash {
+        font-size: 25px ;
+    }
+    .l32 {
+
+    }
 }
+
 @media (min-width: 950px) {
     .imagen-grande {
         display: none; /* Oculta la imagen grande en pantallas pequeñas */
@@ -124,7 +134,38 @@ li:hover {
     .menu2 {
         display: none; 
     }
+    .fondo {
+        position: absolute;
+        margin-top: 400px;
+        height: 60%;
+        width: 100%;
+        background: linear-gradient(to bottom, #000000, #050319 15%,#16123a);
+        margin-bottom: 0px;
+    } 
+    .l1 {
+        font-size: 100px ;
+    }
+    .l2 {
+        font-size: 40px; ;
+    }
+    .l31 {
+        font-size: 25px;;
+    }
+    #slash {
+        font-size: 70px;
+    }
+    .l32 {
+        font-size: 23px;
+
+    }
+    .l4 {
+        font-size: 25px;
+    }
+    .l5{
+        font-size: 20px;
+    }
 }
+
 @media (min-width: 1500px) {
     .imagen-mediana {
         display: none; /* Oculta la imagen grande en pantallas pequeñas */
@@ -140,7 +181,38 @@ li:hover {
     .menu2 {
         display: none;
     }
+    .fondo {
+        position: absolute;
+        margin-top: 400px;
+        height: 60%;
+        width: 100%;
+        background: linear-gradient(to bottom, #000000, #050319 15%,#16123a);
+        margin-bottom: 0px;
+    } 
+    .l1 {
+        font-size: 100px ;
+    }
+    .l2 {
+        font-size: 40px; ;
+    }
+    .l31 {
+        font-size: 25px;;
+    }
+    #slash {
+        font-size: 70px;
+    }
+    .l32 {
+        font-size: 23px;
+
+    }
+    .l4 {
+        font-size: 25px;
+    }
+    .l5{
+        font-size: 20px;
+    }
 }
+
 .presentacion {
     position: relative;
     color: white;
@@ -162,7 +234,6 @@ li:hover {
 }
 .l1{
     display: block;
-    font-size: 100px;
     margin: 5px;
     text-shadow: 0 0 0px #0c48b4, 0 0 20px #0c48b4, 0 0 00px #0c48b4, 0 0 20px #0c48b4, 0 0 0px #3c69bd, 0 0 0px #0c48b4, 0 0 0px #0c48b4, 0 0 10px #0c48b4;
     letter-spacing: 5px;
@@ -171,7 +242,6 @@ li:hover {
 }
 .l2{
     text-shadow: 0 0 0px #6850a4, 0 0 20px #6850a4, 0 0 00px #6850a4, 0 0 20px #6850a4, 0 0 0px #6850a4, 0 0 0px #0c48b4, 0 0 0px #6850a4, 0 0 10px #6850a4;
-    font-size: 40px;
     letter-spacing: 4px
 }   
 .l3 {
@@ -186,14 +256,12 @@ li:hover {
 .l31 {
     text-shadow: 0 0 0px #22266e, 0 0 10px #22266e, 0 0 0px #22266e, 0 0 10px #22266e, 0 0 0px #22266e, 0 0 0px #22266e, 0 0 0px #22266e, 0 0 5px #22266e;
     color:#a7ace9;
-    font-size: 25px;
     align-items: right;
     width: 180px;
     text-align: right;
 }
 #slash {
    color: #714fd5;
-   font-size: 70px;
 }
 .l32 {
     text-shadow: 0 0 0px #22266e, 0 0 10px #22266e, 0 0 0px #22266e, 0 0 10px #22266e, 0 0 0px #22266e, 0 0 0px #22266e, 0 0 0px #22266e, 0 0 5px #22266e;
@@ -207,7 +275,6 @@ li:hover {
 .l4 {
     text-shadow: 0 0 0px #73759d, 0 0 5px #73759d, 0 0 0px #73759d, 0 0 10px #73759d, 0 0 0px #73759d, 0 0 0px #73759d, 0 0 0px #73759d, 0 0 1px #73759d;
     color: #d7dbf1;
-    font-size: 25px;
     letter-spacing: 3px;
     padding-top: 20px;
     font-family:Arial, Helvetica, sans-serif;
@@ -218,7 +285,6 @@ li:hover {
     justify-content: center; /* Centrar horizontalmente */
     align-items: center; /* Centrar verticalmente */
     padding-top: 10px;
-    font-size: 20px;
     font-family: Arial, Helvetica, sans-serif;
     margin: 5px;
     text-align: left; /* Justificar a la izquierda */
@@ -235,14 +301,15 @@ footer {
     background-color: rgba(0, 0, 0, 0.8);
     text-align: center;
     width: 100%;
-    bottom: 0px;
-    margin-top: 20px;
+    margin-top: 27.5%;
+    position: absolute;
 }
 footer a img {
     transition: transform 0.5s; /* Agrega una transición para suavizar el cambio de tamaño */
     margin-top: 18px;
     margin-left: 10px;
     margin-right: 10px;
+    border-radius: 10px;
   }
   
   footer a img:hover {
@@ -257,14 +324,43 @@ footer a img {
       transform: scale(1.1); /* A los 0.5 segundos de la animación, la imagen se aumenta a un 110% de su tamaño original */
     }
     25% {
-        transform: scale(1.60); /* A los 0.5 segundos de la animación, la imagen se aumenta a un 110% de su tamaño original */
+        transform: scale(1.40); /* A los 0.5 segundos de la animación, la imagen se aumenta a un 110% de su tamaño original */
       }
 
     100% {
-      transform: scale(1.50); /* Al final de la animación, la imagen se aumenta a un 150% de su tamaño original */
+      transform: scale(1.30); /* Al final de la animación, la imagen se aumenta a un 150% de su tamaño original */
     }
   }
-
+  /* .lds-dual-ring,
+  .lds-dual-ring:after {
+    box-sizing: border-box;
+  }
+  .lds-dual-ring {
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+  }
+  .lds-dual-ring:after {
+    content: " ";
+    display: block;
+    width: 64px;
+    height: 64px;
+    margin: 8px;
+    border-radius: 50%;
+    border: 6.4px solid currentColor;
+    border-color: currentColor transparent currentColor transparent;
+    animation: lds-dual-ring 1.2s linear infinite;
+  }
+  @keyframes lds-dual-ring {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  } */
+  
+  
   
   
   
