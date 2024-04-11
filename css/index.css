@@ -124,6 +124,8 @@ li:hover {
         right: 0;
         margin-right: 5px ;
         margin-top: 5px;
+        height: 70px;
+        width: 70px;
       } 
     .menu2:hover{
         transform: scale(1.10);
@@ -328,6 +330,17 @@ li:hover {
 }
 .btn {
    padding-top:40px ;
+}
+button {
+    width: 70px;
+    height: 35px;
+    transform: scale(1.1);
+    color: white;
+    text-decoration: none;
+    background-color: #22266e;
+    border-radius: 10px;
+    border-color: #050319;
+    box-shadow: black 0 0 5px;
 }
 footer {
     height: 70px;

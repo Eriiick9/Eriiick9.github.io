@@ -1,10 +1,13 @@
-// const erick = document.querySelector('.menu2');
-// const menuList = document.querySelector('.lista2');
-const dropMenu = document.querySelector('.menu2');
-const alerta = "funciona";
+const erick = document.querySelector('.menu2');
+const menuList = document.querySelector('.menu2 img');
+const dropMenu = document.querySelector('.lista2');
 
-dropMenu.addEventListener('click', function() {
-    alert(alerta);
+erick.onclick = function () {
+    dropMenu.classList.erick('open')
+    const hola = dropMenu.classList.contains('open')
 
-});
+    menuList.classList = hola
+    ?
+    :
+}
 
