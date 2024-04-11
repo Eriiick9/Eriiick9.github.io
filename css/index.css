@@ -112,7 +112,7 @@ li:hover {
     .fondo {
         position: absolute;
         margin-top: 400px;
-        height: 63%;
+        height: 64%;
         width: 100%;
         background: linear-gradient(to bottom, #000000, #050319 15%,#16123a);
         margin-bottom: 0px;
@@ -172,7 +172,7 @@ li:hover {
     .fondo {
         position: absolute;
         margin-top: 400px;
-        height: 60%;
+        height: 64%;
         width: 100%;
         background: linear-gradient(to bottom, #000000, #050319 15%,#16123a);
         margin-bottom: 0px;
@@ -219,7 +219,7 @@ li:hover {
     .fondo {
         position: absolute;
         margin-top: 400px;
-        height: 60%;
+        height: 64%;
         width: 100%;
         background: linear-gradient(to bottom, #000000, #050319 15%,#16123a);
         margin-bottom: 0px;
@@ -247,7 +247,6 @@ li:hover {
         font-size: 20px;
     }
 }
-
 .presentacion {
     position: relative;
     color: white;
@@ -336,6 +335,7 @@ footer {
     text-align: center;
     width: 100%;
     position: absolute;
+    bottom: 0px;
 }
 footer a img {
     transition: transform 0.5s; /* Agrega una transición para suavizar el cambio de tamaño */
