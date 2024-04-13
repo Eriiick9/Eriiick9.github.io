@@ -17,34 +17,6 @@ body::-webkit-scrollbar-thumb {
     border-radius: 10px;
     border-right: 2px solid #050319;
 }
-.drop-menu {
-    display: none;
-    position: absolute;
-    right: 2rem;
-    height: 0;
-    top: 60px;
-    width: 300px;
-    background: rgb(255,255,255, 0.1);
-    backdrop-filter: blur(15px);
-    border-radius: 10px;
-    overflow: hidden;
-    z-index: 10;
-    transition: height .2s cubic-bezier(0.175, 0.885, 0.32, 1.275) ;
-}
-.drop-menu.open {
-    height: 240px;
-}
-.drop-menu li {
-    padding: 0.7rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.lista2 {
-    list-style: none;
-    color: white;
-}
-
 .menu1 {
     position: absolute;
     z-index: 4;
@@ -124,12 +96,52 @@ li:hover {
         right: 0;
         margin-right: 5px ;
         margin-top: 5px;
-        height: 70px;
-        width: 70px;
+        height: 68px;
+        width: 68px;
       } 
     .menu2:hover{
-        transform: scale(1.10);
+        animation: rebote 0.5s forwards;
+        
+    }  
+@keyframes rebote {
+  0% {
+    transform: scale(1); /* La imagen comienza con su tamaño original (escala de 1) */
+  }
+  25% {
+    transform: scale(1.05); /* A los 0.5 segundos de la animación, la imagen se aumenta a un 110% de su tamaño original */
+  }
+  25% {
+      transform: scale(1.2); /* A los 0.5 segundos de la animación, la imagen se aumenta a un 110% de su tamaño original */
     }
+  100% {
+    transform: scale(1.1); /* Al final de la animación, la imagen se aumenta a un 150% de su tamaño original */
+  }
+}
+.drop-menu {
+    position: absolute;
+    right: 2rem;
+    top: 60px;
+    height: 0;
+    width: 300px;
+    background: rgb(255,255,255, 0.1);
+    backdrop-filter: blur(15px);
+    border-radius: 10px;
+    overflow: hidden;
+    z-index: 10;
+    transition:  height 02s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+   
+}
+.drop-menu li {
+    padding: 0.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+.drop-menu.open {
+    height: 240px;
+}
+
     .menu1 {
         display: none; 
     }
@@ -171,6 +183,7 @@ li:hover {
     .menu2 {
         display: none; 
     }
+
     .fondo {
         position: absolute;
         margin-top: 400px;
@@ -342,6 +355,25 @@ button {
     border-color: #050319;
     box-shadow: black 0 0 5px;
 }
+button:hover{
+    animation: rebote 0.5s forwards;
+} 
+@keyframes rebote {
+  0% {
+    transform: scale(1); /* La imagen comienza con su tamaño original (escala de 1) */
+  }
+  25% {
+    transform: scale(1.1); /* A los 0.5 segundos de la animación, la imagen se aumenta a un 110% de su tamaño original */
+  }
+  25% {
+      transform: scale(1.40); /* A los 0.5 segundos de la animación, la imagen se aumenta a un 110% de su tamaño original */
+    }
+
+  100% {
+    transform: scale(1.30); /* Al final de la animación, la imagen se aumenta a un 150% de su tamaño original */
+  }
+}
+
 footer {
     height: 70px;
     background-color: rgba(0, 0, 0, 0.8);
@@ -377,7 +409,8 @@ footer a img {
       transform: scale(1.30); /* Al final de la animación, la imagen se aumenta a un 150% de su tamaño original */
     }
   }
-  /* .lds-dual-ring,
+  /* }
+  .lds-dual-ring,
   .lds-dual-ring:after {
     box-sizing: border-box;
   }
