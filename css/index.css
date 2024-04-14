@@ -105,22 +105,22 @@ li:hover {
     }  
 @keyframes rebote {
   0% {
-    transform: scale(1); /* La imagen comienza con su tamaño original (escala de 1) */
+    transform: scale(1);
   }
   25% {
-    transform: scale(1.05); /* A los 0.5 segundos de la animación, la imagen se aumenta a un 110% de su tamaño original */
+    transform: scale(1.05); 
   }
   25% {
-      transform: scale(1.2); /* A los 0.5 segundos de la animación, la imagen se aumenta a un 110% de su tamaño original */
+      transform: scale(1.2); 
     }
   100% {
-    transform: scale(1.1); /* Al final de la animación, la imagen se aumenta a un 150% de su tamaño original */
+    transform: scale(1.1); 
   }
 }
 .drop-menu {
     position: absolute;
-    right: 2rem;
-    top: 60px;
+    right: 3rem;
+    top: 70px;
     height: 0;
     width: 300px;
     background: rgb(255,255,255, 0.1);
@@ -128,9 +128,14 @@ li:hover {
     border-radius: 10px;
     overflow: hidden;
     z-index: 10;
-    transition:  height 02s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-   
+    transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
+
+.drop-menu ul {
+    list-style: none;
+    padding: 0;
+}
+
 .drop-menu li {
     padding: 0.7rem;
     display: flex;
@@ -138,8 +143,9 @@ li:hover {
     justify-content: center;
     color: white;
 }
+
 .drop-menu.open {
-    height: 240px;
+    height: 130px;
 }
 
     .menu1 {
@@ -169,6 +175,7 @@ li:hover {
     }
 }
 
+
 @media (min-width: 950px) {
     .imagen-grande {
         display: none; /* Oculta la imagen grande en pantallas pequeñas */
@@ -186,7 +193,7 @@ li:hover {
 
     .fondo {
         position: absolute;
-        margin-top: 400px;
+        margin-top: 360px;
         height: 64%;
         width: 100%;
         background: linear-gradient(to bottom, #000000, #050319 15%,#16123a);
@@ -233,7 +240,7 @@ li:hover {
     }
     .fondo {
         position: absolute;
-        margin-top: 400px;
+        margin-top:360px;
         height: 64%;
         width: 100%;
         background: linear-gradient(to bottom, #000000, #050319 15%,#16123a);
