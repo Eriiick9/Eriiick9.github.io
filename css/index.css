@@ -91,7 +91,7 @@ body::-webkit-scrollbar-thumb {
         text-align: right;
         right: 0;
         margin-right: 5px ;
-        margin-top: 5px;
+       margin-top: 80px;
         height: 68px;
         width: 68px;
         z-index: 11;
@@ -103,16 +103,26 @@ body::-webkit-scrollbar-thumb {
         text-align: right;
         right: 0;
         margin-right: 5px ;
-        margin-top: 5px;
+        margin-top: 80px;
         height: 68px;
         width: 68px;
         z-index: 11;
         display: block;
       } 
-      .borde-menu2{
-        background-color: #000000;
-      }
-
+    .contorno {
+        position: absolute;
+        z-index: 4;
+        text-align: right;
+        right: 0;
+        margin-top: 80px;
+        height: 68px;
+        width: 85px;
+        z-index: 11;
+        display: block;
+        background-color: #050319;
+        border-radius: 40px 0 0 40px;
+    }
+    
 @keyframes rebote {
   0% {
     transform: scale(1);
@@ -132,35 +142,39 @@ body::-webkit-scrollbar-thumb {
     right: 0;
     top: 0px;
     height: 0;
-    width: 300px;
-    background: rgba(69, 11, 102, 0.651);
+    width: 50%;
+    background: #050319;
     backdrop-filter: blur(15px);
-    border-radius: 10px;
+    border-radius: 0px 0 0 10px;
     overflow: hidden;
     z-index: 10;
     transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
-
 .drop-menu ul {
     list-style: none;
     padding: 0;
-    margin-top: 80px;
+    padding-top: 50% ;
 }
 
 .drop-menu li {
+    list-style: none;
     padding: 0.7rem;
     display: flex;
     align-items: center;
     justify-content: center;
     color: grey;
 }
+.enlace {
+    text-decoration: none;
+}
 li:hover {
     height: 100%;
     transform: scale(1.05);
     color: grey;
-    background-color: rgba(69, 11, 102, 0.8);
-    border-radius: 30px ;
-    box-shadow: #000000 10px;
+    background-color:#16123a;
+    box-shadow: #16123a;
+    border-radius: 40px ;
+    box-shadow:#16123a 40px;
     /* text-decoration: underline; */
     transition: 0.7s;
     color: white;
@@ -195,8 +209,6 @@ li:hover {
         display: block;
     }
 }
-
-
 @media (min-width: 950px) {
     .imagen-grande {
         display: none; /* Oculta la imagen grande en pantallas pequeñas */
@@ -214,11 +226,10 @@ li:hover {
 
     .fondo {
         position: absolute;
-        margin-top: 360px;
-        height: 64%;
+        margin-top:280px;
+        height: 100%;
         width: 100%;
         background: linear-gradient(to bottom, #000000, #050319 15%,#16123a);
-        margin-bottom: 0px;
     } 
     .l1 {
         font-size: 100px ;
@@ -254,18 +265,17 @@ li:hover {
     .imagen-grande {
         display: block; /* Muestra la imagen pequeña en pantallas pequeñas */
         position: absolute;
-
     }
     .menu2 {
         display: none;
     }
+
     .fondo {
         position: absolute;
-        margin-top: 300px;
+        margin-top:px;
         height: 100%;
         width: 100%;
         background: linear-gradient(to bottom, #000000, #050319 15%,#16123a);
-        margin-bottom: 0px;
     } 
     .l1 {
         font-size: 100px ;
